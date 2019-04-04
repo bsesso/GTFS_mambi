@@ -1,4 +1,4 @@
-# Numéro de ônibus passando por cada ponto de SP
+# Numéro de ônibus e trens passando por cada ponto de SP
 
 
 ## Arquivos gerados
