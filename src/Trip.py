@@ -1,3 +1,5 @@
+import re
+
 class Trip:
 	def __init__(self, info):
 		self.infos = []
@@ -19,3 +21,8 @@ class Trip:
 			# print("\t(", info["end_time"], "-", info["start_time"], ") /", info["headway_secs"], "=", time_interval.seconds // info["headway_secs"].seconds + 1)
 
 		return departures
+
+	def isTrain(self):
+		if re.match(r"METRÔ.*", self.id) or re.match(r"CPTM.*", self.id):
+			return True
+		return False
